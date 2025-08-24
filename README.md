@@ -20,6 +20,9 @@ NextLearn 是一个集成了 AI Agent 的学习平台，支持右上角角色切
 
 ## Project Members
 ## 项目成员
+
+（无排名先后之分 In no particular order）
+
 1. Siyu Chen 530666064
 2. Sirui Li 530548597
 3. Zhaoyu Wang 530454704
