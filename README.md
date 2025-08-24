@@ -286,6 +286,6 @@ There are 2 ways to configure LangChain API:
 
 This stage mainly focuses on the requirements and UML diagrams of the project
 
-**Project Demonstration Vedio on Bilibili：*
+**Project Demonstration Vedio on Bilibili：**
 
 [Link] (https://www.bilibili.com/video/BV1WSeEzhEaG/?vd_source=7ac589582f6fda32bc1f1dd051548e42)
