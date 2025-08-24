@@ -131,14 +131,8 @@ NextLearn 是一个集成了 AI Agent 的学习平台，支持右上角角色切
       At the same time, all AI tutoring history (including questions and answers) is stored in the system’s database, enabling students to review their learning records later.
       
       此外，系统会自动保存所有的 AI 辅导记录（包括问题与答案），存入数据库，方便学生在后续学习中进行复习与回顾。
-
-   3. **Consultation Appointment / 预约老师咨询：**
       
-      This feature provides students with a convenient online system to schedule teacher consultations based on their individual learning needs. Students can select suitable time slots to engage in one-on-one communication with teachers. The feature establishes an efficient and instant communication channel between students and teachers, helping to enhance learning effectiveness and understanding of course content.
-      
-      本功能为学生提供一个便捷的线上系统，可以根据个人学习需求预约教师咨询。学生可以选择合适的时间段，与教师建立一对一沟通，该功能为学生和教师建立起高效即时的交流渠道，有助于提升学习效果和课程理解度。
-      
-   4. **Study Resource Recommendation / 学习资源推荐：**
+   3. **Study Resource Recommendation / 学习资源推荐：**
       
       The Study Resource Recommendation Feature is an intelligent system designed to recommend the most suitable study resources based on students’ submitted learning status and needs. It analyzes students’ learning background, current challenges, and goals, automatically filtering and providing relevant materials to help them acquire knowledge more effectively.
 
