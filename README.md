@@ -28,6 +28,30 @@ NextLearn 是一个集成了 AI Agent 的学习平台，支持右上角角色切
 
 ---
 
+## Documents Introduction
+## 文件介绍
+1. **5620_website-main:**
+   
+   front-end, 前端代码
+
+   **运行编译器：** VS Code
+
+2. **back-end:**
+
+   bac-end，后端代码 + Database SQL document 数据库文件
+
+   **运行编译器：** Idea + MySQL + Navicat
+   
+4. **LLMPy:**
+
+   Using Flask on the Python side to transfer data with the backend
+
+   在python端使用flask与后端进行数据传输
+   
+   **运行编译器：** PyCharm
+
+---
+
 ## Key Features
 ## 主要功能：
 1. **Teacher End （教师端）：**
@@ -232,6 +256,28 @@ scp -r /local/path/to/nextlearn user@production_server:/path/to/deploy
 
 ---
 
+## API Configuration
+## API配置
+There are 2 ways to configure LangChain API:
+
+有两种方法配置LangChain API：
+
+1. Change the parameter / 更改变量设置
+
+   Change the following code in LLMPy.py into your own API
+   
+   在LLMPy.py中的如下代码更改为自己的api密钥
+
+   ```python
+   OPENAI_API_KEY = "..."
+    ```
+2. Save the API key into environment parameters, and call it by os.environ
+
+   将API密钥存入环境变量并使用os.environ调用。
+   
+
+---
+
 ## Project Demonstration
 ## 项目展示
 **Stage1 Group Presentation / 阶段一小组汇报：**
@@ -240,3 +286,6 @@ scp -r /local/path/to/nextlearn user@production_server:/path/to/deploy
 
 This stage mainly focuses on the requirements and UML diagrams of the project
 
+**Project Demonstration Vedio on Bilibili：*
+
+[Link] (https://www.bilibili.com/video/BV1WSeEzhEaG/?vd_source=7ac589582f6fda32bc1f1dd051548e42)
