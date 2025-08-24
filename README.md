@@ -1,3 +1,4 @@
+# NextLearn Platform
 # Intelligent-Online-Education-Platform-based-on-LangChain
 # 基于 LangChain 的线上智能教育平台 
 
@@ -5,8 +6,15 @@
 
 ## Project Introduction
 ## 项目简介
-This project is a **LangChain-powered large language model (LLM)** based intelligent online education platform. It provides different user interfaces for **teachers, students, and parents**, supporting features such as intelligent Q&A, automatic teaching plan generation, quiz creation, test evaluation, and performance analysis. The platform enables three-way communication and real-time supervision of students’ learning, aiming to enhance personalized education.  
-本项目是一个基于 **LangChain 大语言模型** 搭建的三方交流智能教育平台网站，为 **老师、学生、家长** 提供不同的用户端，支持智能问答、教学计划自动生成、出题、测验与成绩分析等功能，实现三方交流与学生学习情况的实时监督，助力个性化教育。  
+NextLearn is an integrated learning platform with an AI-agent, featuring role switching in the upper right corner. For students, the primary functions include AI guidance, intelligent study plan generation, and online communication. For teachers, the main features are AI-assisted quiz generation, intelligent teaching plan customization, and online communication. For parents, the key functions include viewing students' progress paths, online communication, and monitoring learning status.
+
+NextLearn 是一个集成了 AI Agent 的学习平台，支持右上角角色切换。
+
+- 对于 学生：主要功能包括 AI 辅导、智能学习计划生成以及在线交流。
+
+- 对于 教师：主要功能包括 AI 辅助出题、智能教学计划定制以及在线交流。
+
+- 对于 家长：主要功能包括查看学生学习进度路径、在线交流以及学习状态监控。
 
 ---
 
@@ -123,10 +131,18 @@ This project is a **LangChain-powered large language model (LLM)** based intelli
 - 前端 (Frontend)：
 
   Bootstrap + Responsive Design
+
+  The UI leverages Bootstrap 5 for responsive and modern design components.
+
+  前端采用 Bootstrap 5 实现响应式与现代化的 UI 组件。
   
 - 后端 (Backend)：
   
   SpringBoot + Flask + RESTful API
+
+  The project utilizes Spring Boot with MyBatis for database operations and Maven for dependency management and project build.
+
+  项目使用 Spring Boot 搭配 MyBatis 进行数据库操作，并使用 Maven 管理依赖与构建。
   
 - 数据库 (Database)：
 
@@ -135,6 +151,74 @@ This project is a **LangChain-powered large language model (LLM)** based intelli
 - AI 模块 (AI Module)：
   
   LangChain + OpenAI API
+
+  Applied to the AI-assisted question-asking feature. The platform integrates Google Cloud Vision API and LangChain's AI agent. When users upload an image, the backend extracts text via Google Cloud Vision API, passes it to the LangChain AI agent, and generates intelligent tutoring responses.
+
+  应用于 AI 辅助答疑功能。平台集成了 Google Cloud Vision API 与 LangChain AI Agent。用户上传图片后，后端利用 Vision API 提取文字，再交给 LangChain AI Agent 分析并生成智能辅导回答。
+
+- 数据加密（Data Encryption）：
+
+  We implemented RSA asymmetric encryption to secure sensitive data within the application.
+
+  实现了 RSA 非对称加密，用于保护应用中的敏感数据。
+
+- CI/CD / 持续集成与部署：
+
+  We employed GitHub Actions as our CI/CD workflow to automate testing and deployment.
+
+  使用 GitHub Actions 构建 CI/CD 工作流，实现测试与部署自动化。
+
+---
+
+## Configuration
+## 环境配置
+Set environment variable url to the MySQL database URL.
+
+Requirements: Java 8.0, Python 3.12.2
+
+```yaml
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/ruanxie?useUnicode=true&characterEncoding=UTF-8&useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true
+    username: root
+    password: 123456
+
+server:
+  port: 8181
+
+mybatis:
+  type-aliases-package: com.example.pojo
+  mapper-locations: classpath:mybatis/mapper/*.xml
+  config-locations: classpath:mybatis/mybatis-config.xml
+
+Main Class: nextLearnApplication
+```
+---
+
+## Deployment Instructions
+## 部署说明
+**Deploy to Production:**
+
+1. Ensure the target production server has the necessary dependencies.
+
+   确保目标服务器已安装必要的依赖。
+   
+3. Copy the project files to the server:
+
+   将项目文件复制到服务器：
+   
+```bash
+scp -r /local/path/to/nextlearn user@production_server:/path/to/deploy
+```
+
+3. Run the project using the same build and run commands mentioned above.
+
+   使用相同的构建与运行命令启动项目。
+   
+4. Optionally, set up a CI/CD pipeline to automate the deployment process.
+
+   可选：配置 CI/CD 流水线，实现自动化测试与部署。
 
 ---
 
