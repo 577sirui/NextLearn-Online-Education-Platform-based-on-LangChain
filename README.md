@@ -49,6 +49,12 @@ NextLearn 是一个集成了 AI Agent 的学习平台，支持右上角角色切
    在python端使用flask与后端进行数据传输
    
    **运行编译器：** PyCharm
+   
+6. **Report：**
+
+   The report presents a variety of UML diagrams employed in this project, including ad hoc requirements, feature diagram, use case diagram and specification, class diagram, object diagram, package diagram, and deployment diagram.
+
+   报告中展示了本项目使用的多种 UML 图表，包括即席需求图、特征图、用例图及其规约、类图、对象图、包图和部署图。
 
 ---
 
