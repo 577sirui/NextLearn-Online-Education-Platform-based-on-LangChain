@@ -1,0 +1,6 @@
+subject: biology
+goals: all knowledge about cell
+duration: 2
+gradeLevel: elementary
+proficiencyLevel: beginner
+dateRange: 2025-08-12 to 2025-08-26

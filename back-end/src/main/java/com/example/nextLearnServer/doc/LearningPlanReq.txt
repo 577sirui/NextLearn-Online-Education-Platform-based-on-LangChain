@@ -1,0 +1,5 @@
+subject: biology
+goals: all knowledge about cell
+duration: 2
+learningStyle: visual
+dateRange: 2025-08-12 to 2025-08-26

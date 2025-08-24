@@ -1,0 +1,4 @@
+questionType: MCQ
+difficulty: Medium
+numberOfQuestions: 10
+course: math

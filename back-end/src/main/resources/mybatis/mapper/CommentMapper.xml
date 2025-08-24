@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.example.nextLearnServer.mapper.CommentMapper">
+    <insert id="addComment" parameterType="com.example.nextLearnServer.pojo.Comment" useGeneratedKeys="true" keyProperty="commentId">
+        INSERT INTO comment (content, publisher, role, blog_id, create_time)
+        VALUES (#{content}, #{publisher}, #{role}, #{blogId}, #{createTime});
+    </insert>
+
+    <delete id="deleteComment" parameterType="com.example.nextLearnServer.pojo.Comment">
+        DELETE FROM comment WHERE comment_id = #{commentId}
+    </delete>
+
+</mapper>

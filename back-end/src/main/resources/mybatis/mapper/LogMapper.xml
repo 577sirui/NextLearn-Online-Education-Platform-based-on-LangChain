@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.example.nextLearnServer.mapper.LogMapper">
+    <insert id="saveLog" parameterType="com.example.nextLearnServer.pojo.Log">
+        insert into log(id, operator, operate, type, create_time)
+        values(
+                  #{id},
+                  #{operator},
+                  #{operate},
+                  #{type},
+                  now()
+              )
+    </insert>
+
+</mapper>

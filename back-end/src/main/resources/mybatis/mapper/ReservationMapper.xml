@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.example.nextLearnServer.mapper.ReservationMapper">
+    <update id="updateStatus" parameterType="com.example.nextLearnServer.pojo.Reservation">
+        update reservations
+        SET
+        name = #{name},
+        student_id = #{studentId},
+        status = #{status},
+        password = #{password}
+        WHERE
+        reservation_position = #{reservationPosition}
+    </update>
+
+    <select id="getAllReservations" resultType="com.example.nextLearnServer.pojo.Reservation">
+        select
+        name, status, reservation_position as reservationPosition, student_id as studentId
+        from reservations;
+    </select>
+
+    <select id="getPassword" resultType="java.lang.String">
+        select
+            password
+        from reservations where reservation_position = #{reservationPosition};
+    </select>
+
+</mapper>

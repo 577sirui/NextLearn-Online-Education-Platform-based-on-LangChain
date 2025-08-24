@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.example.nextLearnServer.mapper.BlogMapper">
+
+<!--    &lt;!&ndash; add a blog&ndash;&gt;-->
+<!--    <insert id="addBlog" parameterType="com.example.nextLearnServer.pojo.Blog" useGeneratedKeys="true" keyProperty="blogId">-->
+<!--        INSERT INTO blog (title, content, publisher, role, category, commentList, blogCreateTime)-->
+<!--        VALUES (#{title}, #{content}, #{publisher}, #{role}, #{category}, #{commentList}, #{blogCreateTime})-->
+<!--    </insert>-->
+
+<!--    &lt;!&ndash; delete a blog &ndash;&gt;-->
+<!--    <delete id="deleteBlog" parameterType="int">-->
+<!--        DELETE FROM blog WHERE id = #{blogId}-->
+<!--    </delete>-->
+
+<!--    &lt;!&ndash; edit a blog &ndash;&gt;-->
+<!--    <update id="updateBlog" parameterType="com.example.nextLearnServer.pojo.Blog">-->
+<!--        UPDATE blog-->
+<!--        SET title = #{title}, content = #{content}, publisher = #{publisher},-->
+<!--            role = #{role}, category = #{category}, commentList = #{commentList}, blogCreateTime = #{blogCreateTime}-->
+<!--        WHERE id = #{blogId}-->
+<!--    </update>-->
+
+<!--    &lt;!&ndash; search a blog &ndash;&gt;-->
+<!--    <select id="getBlogById" parameterType="int" resultType="com.example.nextLearnServer.pojo.Blog">-->
+<!--        SELECT * FROM blog WHERE id = #{blogId}-->
+<!--    </select>-->
+
+<!--    &lt;!&ndash; search all blogs &ndash;&gt;-->
+<!--    <select id="getAllBlogs" resultType="com.example.nextLearnServer.pojo.Blog">-->
+<!--        SELECT * FROM blog-->
+<!--    </select>-->
+
+</mapper>

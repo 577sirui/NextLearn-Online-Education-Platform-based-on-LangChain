@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.example.nextLearnServer.mapper.SignMapper">
+    <insert id="saveSign" parameterType="com.example.nextLearnServer.pojo.Sign">
+        insert into sign(name, email, phone, student_id, major, grade, skill, create_time)
+        values(#{name},#{email},#{phone},#{studentId},#{major},#{grade},#{skill}, now())
+    </insert>
+
+    <select id="queryAllSign" resultType="Map">
+        select name, major, grade, student_id as studentId, phone, email, create_time as createTime from sign;
+    </select>
+
+
+</mapper>
