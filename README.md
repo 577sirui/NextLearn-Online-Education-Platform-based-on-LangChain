@@ -18,6 +18,16 @@ NextLearn 是一个集成了 AI Agent 的学习平台，支持右上角角色切
 
 ---
 
+## Project Members
+## 项目成员
+1. Siyu Chen 530666064
+2. Sirui Li 530548597
+3. Zhaoyu Wang 530454704
+4. Zhehang Xu 540210303
+5. Wenxing Zhou 540347447
+
+---
+
 ## Key Features
 ## 主要功能：
 1. **Teacher End （教师端）：**
