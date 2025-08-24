@@ -140,4 +140,9 @@ This project is a **LangChain-powered large language model (LLM)** based intelli
 
 ## Project Demonstration
 ## 项目展示
+**Stage1 Group Presentation / 阶段一小组汇报：**
+
+[Link] (https://www.youtube.com/watch?v=qIol8uABpuU)
+
+This stage mainly focuses on the requirements and UML diagrams of the project
 
