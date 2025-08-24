@@ -40,7 +40,7 @@ NextLearn 是一个集成了 AI Agent 的学习平台，支持右上角角色切
 
    bac-end，后端代码 + Database SQL document 数据库文件
 
-   **运行编译器：** Idea + MySQL + Navicat
+   **运行编译器及相关工具：** Idea + MySQL + Navicat
    
 4. **LLMPy:**
 
